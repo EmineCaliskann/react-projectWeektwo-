@@ -1,0 +1,24 @@
+.galeri{
+    h3{
+        margin: 40px 0;
+    }
+    &-img{
+        display: flex;
+        flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+        img{
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            filter: saturate(1);
+            transform: .7s;
+            cursor: pointer;
+            &:hover{
+                transform:scale(1.1);
+                filter: saturate(0);
+                border-radius: 15px;
+            }
+        }
+    }
+}
